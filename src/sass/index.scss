@@ -1,2 +1,8 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/product';
+@import './layouts/tradition';
+@import './layouts/gallery';
+@import './layouts/location';
+@import './layouts/footer';
