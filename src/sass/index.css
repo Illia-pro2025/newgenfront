@@ -13,4 +13,28 @@ a {
 
 ul {
   list-style: none;
+}
+
+.products__list {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .products__list {
+    flex-direction: row;
+  }
+}
+
+.products__item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .products__item {
+    width: 224px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__item {
+    width: 370px;
+  }
 }/*# sourceMappingURL=index.css.map */
