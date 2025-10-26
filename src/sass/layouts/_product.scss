@@ -1,0 +1,20 @@
+.products__list {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.products__item {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 224px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
