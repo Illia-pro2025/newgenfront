@@ -7,8 +7,17 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "montserrat";
+}
+
 a {
   text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 ul {
@@ -103,6 +112,15 @@ ul {
   border: transparent;
 }
 
+  border: transparent;
+}
+
+.product {
+  background-image: url(..//../images/production][gallery__fon-mobile@x1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .products__list {
   display: flex;
   flex-direction: column;
@@ -124,6 +142,46 @@ ul {
 @media screen and (min-width: 1200px) {
   .products__item {
     width: 370px;
+  }
+}
+
+.productfirst__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  width: 146px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .productfirst__title {
+    font-size: 22px;
+    width: 178px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .productfirst__title {
+    font-size: 30px;
+    width: 256px;
+  }
+}
+
+.productsecond__title {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  width: 270px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .productsecond__title {
+    font-size: 34px;
+    width: 306px;
   }
 }
 
