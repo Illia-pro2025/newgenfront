@@ -51,10 +51,34 @@ ul {
   }
 }
 
+.header {
+  background-color: #84a178;
+  padding-top: 8px;
+  padding-bottom: 45px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 65px;
+}
+
+.logo__img {
+  width: 60px;
+  height: 65px;
+  fill: #f8d24e;
+}
+
 .header__list {
   display: flex;
   align-items: center;
   justify-items: center;
+  gap: 28px;
 }
 
 .header__link {
@@ -84,6 +108,10 @@ ul {
   vertical-align: middle;
   background-color: #f8d24e;
   padding: 12px 35px;
+  border-radius: 10px;
+  border: transparent;
+}
+
   border: transparent;
 }
 
