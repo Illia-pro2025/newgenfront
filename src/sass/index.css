@@ -232,6 +232,82 @@ ul {
   gap: 32px;
 }
 
+.hero {
+  background-color: #84a178;
+  padding-bottom: 132px;
+}
+
+.hero__title {
+  font-family: "Seymour One";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 32px;
+}
+
+.hero__span {
+  font-family: "Seymour One";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 96%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+
+.hero__btn__list {
+  display: flex;
+  gap: 12px;
+}
+
+.hero__btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 11px;
+  padding: 11px 26px;
+}
+
+.hero__link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #f8d24e;
+  text-decoration: underline;
+  vertical-align: middle;
+}
+
+.hero__scoop {
+  display: none;
+}
+
+.scoop__text {
+  display: none;
+}
+
+.scoop__img {
+  display: none;
+}
+
+.hero__list__amounts {
+  display: none;
+}
+
+.amounts__title {
+  display: none;
+}
+
+.amounts__text {
+  display: none;
+}
+
 .product {
   background-image: url(..//../images/production+gallery__fon-mobile@x1.png);
   background-position: center;
