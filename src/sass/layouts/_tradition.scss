@@ -1,0 +1,68 @@
+.tradition {
+  background-color: $fon;
+  padding-top: 61px;
+  padding-bottom: 68px;
+}
+.tradition__pretitle {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+}
+.tradition__title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 12px;
+  color: $white;
+}
+// .tradition__info {
+// }
+.tradition__image {
+  margin-top: 22px;
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 200;
+}
+.tradition__image__wrap{
+    position: relative;
+    z-index: 200;
+}
+.tradition__image__wrap::before {
+  content: '';
+  background-color: #f8d24eb2;
+  display: block;
+  width: 279px;
+  height: 279px;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 22px;
+  z-index: 100;
+}
+// .tradition__text {
+// }
+
+// .tradition__button {
+// }
+// .tradition__list {
+// }
+// .tradition__item {
+// }
+// .tradition__icon {
+// }
+// .tradition__number {
+// }
+// .tradition__descrition {
+// }
