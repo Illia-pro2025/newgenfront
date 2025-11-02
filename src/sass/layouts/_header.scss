@@ -9,19 +9,30 @@
   align-items: center;
 }
 .logo {
-  width: 60px;
-  height: 65px;
+  width: 48px;
+  height: 44px;
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 65px;
+  }
 }
 .logo__img {
-  width: 60px;
-  height: 65px;
+  width: 48px;
+  height: 44px;
   fill: #f8d24e;
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 65px;
+  }
 }
 .header__list {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  gap: 28px;
+  display: none;
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 28px;
+  }
 }
 .header__link {
   font-weight: 700;
@@ -40,21 +51,29 @@
   color: #f8d24e;
 }
 .header__btn {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-  vertical-align: middle;
-  background-color: #f8d24e;
-  padding: 12px 35px;
-  border-radius: 10px;
-  border: transparent;
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #f8d24e;
+    padding: 12px 35px;
+    border-radius: 10px;
+    border: transparent;
+  }
 }
 .burger__btn {
   width: 32px;
   height: 32px;
-  @media (min-width: 480px) {
+  background-color: transparent;
+  border: transparent;
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1200px) {
     display: none;
   }
 }
@@ -82,7 +101,9 @@
   height: 32px;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 30px;
+  background-color: transparent;
+  border: transparent;
 }
 .burger__icon__close {
   width: 32px;
@@ -96,6 +117,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  gap: 40px;
 }
 .burger__link {
   font-weight: 700;
@@ -110,4 +132,23 @@
   fill: #f8d24e;
   width: 48px;
   height: 44px;
+}
+.burger__buy {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  background-color: #f8d24e;
+  padding: 12px 35px;
+  border-radius: 10px;
+  border: transparent;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.header__btn__wrap {
+  display: flex;
+  gap: 32px;
 }
