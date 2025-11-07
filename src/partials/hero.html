@@ -13,15 +13,30 @@
         <a href="" class="hero__link">How it’s made?</a>
       </li>
     </ul>
-    <img
-      src="./images/hero__ice-cream-plus@x2.png"
-      alt=""
-      class="hero__scoop"
-    />
-    <p class="scoop__text"></p>
-    <svg class="scoop__img">
-      <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
-    </svg>
+    <div class="scoop__div">
+      <picture>
+        <source
+          srcset="
+            ./images/hero__ice-cream-plus@x1.png 1x,
+            ./images/hero__ice-cream-plus@x2.png 2x
+          " />
+        <img
+          src="./images/hero__ice-cream-plus@x1.png"
+          alt=""
+          class="scoop__img"
+      /></picture>
+      <div class="scoop__wrap">
+        <p class="scoop__text">
+          Indulge in a scoop of ice <br />
+          cream made with passion and <br />
+          treat your taste buds to an <br />
+          unforgettable experience!
+        </p>
+        <svg class="scoop__svg">
+          <use href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </div>
+    </div>
     <ul class="hero__list__amounts">
       <li class="amounts__item">
         <h3 class="amounts__title">16</h3>
