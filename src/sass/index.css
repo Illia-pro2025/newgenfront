@@ -280,6 +280,11 @@ ul {
   gap: 12px;
   margin-bottom: 12px;
 }
+@media (min-width: 1200px) {
+  .hero__btn__list {
+    margin-bottom: 42px;
+  }
+}
 
 .hero__btn {
   font-weight: 600;
@@ -332,6 +337,12 @@ ul {
     margin-right: 32px;
   }
 }
+@media (min-width: 1200px) {
+  .scoop__img {
+    width: 225px;
+    height: 225px;
+  }
+}
 
 .scoop__svg {
   width: 40px;
@@ -364,6 +375,12 @@ ul {
   letter-spacing: 0%;
   text-align: right;
   color: #fcfcfc;
+}
+@media (min-width: 1200px) {
+  .amounts__text {
+    font-size: 14px;
+    line-height: 140%;
+  }
 }
 
 .scoop__wrap {
