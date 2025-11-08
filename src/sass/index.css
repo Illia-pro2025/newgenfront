@@ -127,7 +127,6 @@ ul {
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
-    vertical-align: middle;
     background-color: #f8d24e;
     padding: 12px 35px;
     border-radius: 10px;
@@ -234,7 +233,24 @@ ul {
 
 .hero {
   background-color: #84a178;
+  background-image: url(../images/hero__fon-mobile@x2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   padding-bottom: 132px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero__fon-tablet@x2.png);
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/hero__fon-desktop@x2.png);
+    padding-bottom: 0;
+  }
 }
 
 .hero__title {
@@ -261,6 +277,12 @@ ul {
 .hero__btn__list {
   display: flex;
   gap: 12px;
+  margin-bottom: 12px;
+}
+@media (min-width: 1200px) {
+  .hero__btn__list {
+    margin-bottom: 42px;
+  }
 }
 
 .hero__btn {
@@ -284,28 +306,86 @@ ul {
   vertical-align: middle;
 }
 
-.hero__scoop {
+.scoop__div {
   display: none;
 }
-
-.scoop__text {
-  display: none;
+@media (min-width: 768px) {
+  .scoop__div {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.scoop__img {
-  display: none;
+@media (min-width: 768px) {
+  .scoop__text {
+    display: inline-block;
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #ffffff;
+  }
 }
 
-.hero__list__amounts {
-  display: none;
+@media (min-width: 768px) {
+  .scoop__img {
+    width: 152px;
+    height: 152px;
+    display: block;
+    margin-right: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .scoop__img {
+    width: 225px;
+    height: 225px;
+  }
+}
+
+.scoop__svg {
+  width: 40px;
+  height: 16px;
+  fill: #fcfcfc;
+}
+
+@media (min-width: 768px) {
+  .hero__list__amounts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .amounts__title {
-  display: none;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #131313;
 }
 
 .amounts__text {
-  display: none;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #fcfcfc;
+}
+@media (min-width: 1200px) {
+  .amounts__text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+.scoop__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .product {
@@ -545,9 +625,9 @@ ul {
 }
 
 .tradition__image {
-  margin-top: 22px;
+  margin-top: 54px;
   display: block;
-  width: 100%;
+  width: 280px;
   height: auto;
   position: relative;
   z-index: 200;
@@ -570,6 +650,75 @@ ul {
   position: absolute;
   bottom: 22px;
   z-index: 100;
+}
+
+.tradition__text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  text-align: center;
+  color: #fcfcfc;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.tradition__button {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 15px 35px 15px 34px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: #000000;
+  background-color: #f8d24e;
+  border: transparent;
+  border-radius: 10px;
+  display: block;
+}
+
+.tradition__icon--open {
+  width: 12px;
+  height: 12px;
+}
+
+.tradition__icon--fon {
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: #f8d24e;
+  fill: #000000;
+  display: block;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+
+.tradition__number {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.tradition__descrition {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #fcfcfc;
 }
 
 .footer {
