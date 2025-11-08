@@ -1,6 +1,19 @@
 .hero {
   background-color: $fon;
+  background-image: url(../images/hero__fon-mobile@x2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   padding-bottom: 132px;
+  position: relative;
+  @media (min-width: 768px) {
+    background-image: url(../images/hero__fon-tablet@x2.png);
+    padding-bottom: 0;
+  }
+  @media (min-width: 1200px) {
+    background-image: url(../images/hero__fon-desktop@x2.png);
+    padding-bottom: 0;
+  }
 }
 .hero__title {
   font-family: 'Seymour One';
@@ -24,6 +37,10 @@
 .hero__btn__list {
   display: flex;
   gap: 12px;
+  margin-bottom: 12px;
+  @media (min-width: 1200px) {
+    margin-bottom: 42px;
+  }
 }
 .hero__btn {
   font-weight: 600;
@@ -44,21 +61,71 @@
   text-decoration: underline;
   vertical-align: middle;
 }
-.hero__scoop {
+.scoop__div {
   display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .scoop__text {
-  display: none;
+  @media (min-width: 768px) {
+    display: inline-block;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #ffffff;
+  }
 }
 .scoop__img {
-  display: none;
+  @media (min-width: 768px) {
+    width: 152px;
+    height: 152px;
+    display: block;
+    margin-right: 32px;
+  }
+  @media (min-width: 1200px) {
+    width: 225px;
+    height: 225px;
+  }
+}
+.scoop__svg {
+  width: 40px;
+  height: 16px;
+  fill: #fcfcfc;
 }
 .hero__list__amounts {
-  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .amounts__title {
-  display: none;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #131313;
 }
 .amounts__text {
-  display: none;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #fcfcfc;
+  @media (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+.scoop__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
