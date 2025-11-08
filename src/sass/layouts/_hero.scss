@@ -1,17 +1,17 @@
 .hero {
   background-color: $fon;
-  background-image: url(../images/hero__fon-mobile@x2.png);
+  background-image: url(../images/hero__fon-mobilex2.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   padding-bottom: 132px;
   position: relative;
   @media (min-width: 768px) {
-    background-image: url(../images/hero__fon-tablet@x2.png);
+    background-image: url(../images/hero__fon-tabletx2.png);
     padding-bottom: 0;
   }
   @media (min-width: 1200px) {
-    background-image: url(../images/hero__fon-desktop@x2.png);
+    background-image: url(../images/hero__fon-desktopx2.png);
     padding-bottom: 0;
   }
 }
