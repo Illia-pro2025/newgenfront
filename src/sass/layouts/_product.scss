@@ -1,5 +1,5 @@
 .product {
-  background-image: url(./../images/production+gallery__fon-mobile@x1.png);
+  background-image: url(./../images/production+gallery__fon-mobilex1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,11 +7,11 @@
   padding: 60px 0;
 
   @media screen and (min-width: 768px) {
-    background-image: url(./../images/production+gallery__fon-tablet@x1.png);
+    background-image: url(./../images/production+gallery__fon-tabletx1.png);
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(./../images/production+gallery__fon-desktop@x1.png);
+    background-image: url(./../images/production+gallery__fon-desktopx1.png);
   }
 }
 
@@ -139,7 +139,7 @@
   box-shadow: 0px 11px 20.03px 0px rgba(10, 136, 23, 0.25);
 }
 .products__item:nth-child(2)::before {
-  background-image: url(./../images/production__coffee@x1.png);
+  background-image: url(./../images/production__coffeex1.png);
   box-shadow: 0px 5.4px 20.26px 0px rgba(153, 114, 23, 0.25);
 }
 .products__item:nth-child(3)::before {
