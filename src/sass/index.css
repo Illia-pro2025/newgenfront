@@ -234,23 +234,35 @@ ul {
 
 .hero {
   background-color: #84a178;
-  background-image: url(../images/hero__fon-mobilex2.png);
+  background-image: url(../images/hero__fon-mobilex2.png), url(../images/hero__ice-creamx2.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  padding-bottom: 132px;
+  background-size: contain, 217px;
+  background-position: bottom;
   position: relative;
+  padding-bottom: 231px;
 }
 @media (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero__fon-tabletx2.png);
+    background-image: url(../images/hero__fon-tabletx2.png), url(../images/hero__ice-creamx2.png);
     padding-bottom: 0;
+    background-size: contain;
+    background-position: bottom, 75%;
   }
 }
 @media (min-width: 1200px) {
   .hero {
-    background-image: url(../images/hero__fon-desktopx2.png);
+    background-image: url(../images/hero__fon-desktopx2.png), url(../images/hero__ice-creamx2.png);
+    background-position: center, 75%;
     padding-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 40px;
   }
 }
 
@@ -258,11 +270,11 @@ ul {
   font-family: "Seymour One";
   font-weight: 400;
   font-size: 26px;
-  line-height: 100%;
+  line-height: 120%;
   letter-spacing: 4%;
   text-transform: uppercase;
   color: #fcfcfc;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .hero__span {
@@ -279,6 +291,7 @@ ul {
   display: flex;
   gap: 12px;
   margin-bottom: 12px;
+  align-items: center;
 }
 @media (min-width: 1200px) {
   .hero__btn__list {
@@ -287,6 +300,7 @@ ul {
 }
 
 .hero__btn {
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 12px;
   line-height: 100%;
@@ -298,13 +312,16 @@ ul {
 }
 
 .hero__link {
+  display: block;
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
   color: #f8d24e;
   text-decoration: underline;
-  vertical-align: middle;
+  text-transform: none;
+  padding: 12px 0;
 }
 
 .scoop__div {
@@ -322,10 +339,11 @@ ul {
     display: inline-block;
     font-family: "DM Sans";
     font-weight: 400;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 140%;
     letter-spacing: 0%;
     color: #ffffff;
+    text-transform: none;
   }
 }
 
@@ -350,6 +368,9 @@ ul {
   fill: #fcfcfc;
 }
 
+.hero__list__amounts {
+  display: none;
+}
 @media (min-width: 768px) {
   .hero__list__amounts {
     display: flex;
