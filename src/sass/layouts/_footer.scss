@@ -89,6 +89,10 @@
     fill: $fon;
     background-color: $yellow;
     margin: 7px;
+    &:hover,
+    &:focus {
+      fill: $white;
+    }
   }
   &__number__phone {
     font-family: 'Montserrat', sans-serif;
