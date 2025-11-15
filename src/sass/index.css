@@ -1021,6 +1021,23 @@ ul {
   border: 2px solid #f8d24e;
 }
 
+.gallery {
+  background-image: url(./../images/production+gallery__fon-mobilex1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.gallery__images__item {
+  display: none;
+}
+
+.gallery__images__item.active {
+  display: block;
+  text-align: center;
+}
+
 .footer {
   background-color: #84a178;
   padding-top: 60px;
