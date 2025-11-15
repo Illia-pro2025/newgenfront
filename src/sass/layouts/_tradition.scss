@@ -2,90 +2,202 @@
   background-color: $fon;
   padding-top: 61px;
   padding-bottom: 68px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 83px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 204px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 174px;
+  }
+  &__pretitle {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    @media screen and (min-width: 768px) {
+      font-weight: 800;
+      font-size: 22px;
+      letter-spacing: 4%;
+    }
+    @media screen and (min-width: 1200px) {
+      font-weight: 800;
+      font-size: 30px;
+    }
+  }
+  &__title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 12px;
+    color: $white;
+    margin-bottom: 54px;
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      letter-spacing: 6%;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+    }
+  }
+  &__info {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      margin-top: 72px;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 120px;
+    }
+  }
+  &__image {
+    display: block;
+    width: 279px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      width: 330px;
+      height: 330px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 490px;
+      height: 490px;
+    }
+  }
+  &__image__wrap {
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 768px) {
+      margin-right: 38px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 109px;
+    }
+    &::before {
+      content: '';
+      background-color: #f8d24eb2;
+      display: block;
+      width: 279px;
+      height: 278px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      position: absolute;
+      bottom: 22px;
+      z-index: 1;
+      @media screen and (min-width: 768px) {
+        width: 330px;
+        height: 330px;
+        bottom: 26px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 490px;
+        height: 490px;
+        bottom: 39px;
+      }
+    }
+  }
+  &__text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 4%;
+    text-align: center;
+    color: $white;
+    max-width: 220px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      margin-top: 8px;
+      margin-bottom: 0;
+      max-width: 334px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 90px;
+      font-size: 14px;
+      line-height: 194%;
+      max-width: 463px;
+    }
+  }
+  &__text--tablet {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      margin-bottom: 54px;
+    }
+  }
+  &__button {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 15px 35px 15px 34px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: $black;
+    background-color: $yellow;
+    border: transparent;
+    border-radius: 10px;
+    display: block;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 86px;
+    }
+  }
+  &__icon--open {
+    width: 12px;
+    height: 12px;
+  }
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 80px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 32px;
+    }
+  }
+  &__item {
+    max-width: 230px;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      max-width: 152px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 368px;
+    }
+  }
 }
-.tradition__pretitle {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-  text-transform: uppercase;
-  color: $white;
-}
-.tradition__title {
-  font-family: 'Seymour One';
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 100%;
-  letter-spacing: 4%;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 12px;
-  color: $white;
-}
-// .tradition__info {
-// }
-.tradition__image {
-  margin-top: 54px;
-  display: block;
-  width: 280px;
-  height: auto;
-  position: relative;
-  z-index: 200;
-}
-.tradition__image__wrap {
-  position: relative;
-  z-index: 200;
-}
-.tradition__image__wrap::before {
-  content: '';
-  background-color: #f8d24eb2;
-  display: block;
-  width: 279px;
-  height: 279px;
-  min-width: 100%;
-  min-height: 100%;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 22px;
-  z-index: 100;
-}
-.tradition__text {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 176%;
-  letter-spacing: 4%;
-  text-align: center;
-  color: $white;
-  margin-top: 40px;
-  margin-bottom: 24px;
-}
-.tradition__button {
-  font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0%;
-  text-align: center;
-  padding: 15px 35px 15px 34px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  color: $black;
-  background-color: $yellow;
-  border: transparent;
-  border-radius: 10px;
-  display: block;
-}
-.tradition__icon--open {
-  width: 12px;
-  height: 12px;
-}
-// .tradition__list {
-// }
-// .tradition__item {
-// }
+
 .tradition__icon--fon {
   width: 50px;
   height: 50px;
@@ -96,6 +208,11 @@
   display: block;
   margin: 0 auto;
   margin-top: 28px;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .tradition__number {
   font-family: 'Montserrat';
@@ -108,6 +225,13 @@
   color: $white;
   margin-top: 16px;
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
 }
 .tradition__descrition {
   font-family: 'Montserrat';
@@ -117,4 +241,13 @@
   letter-spacing: 0%;
   text-align: center;
   color: $white;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 174%;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 2%;
+  }
 }
