@@ -85,6 +85,9 @@
     @media screen and (min-width: 768px) {
       margin-right: 38px;
     }
+    @media screen and (min-width: 1200px) {
+      margin-right: 109px;
+    }
     &::before {
       content: '';
       background-color: #f8d24eb2;
@@ -109,71 +112,92 @@
       }
     }
   }
+  &__text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 4%;
+    text-align: center;
+    color: $white;
+    max-width: 220px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      margin-top: 8px;
+      margin-bottom: 0;
+      max-width: 334px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 90px;
+      font-size: 14px;
+      line-height: 194%;
+      max-width: 463px;
+    }
+  }
+  &__text--tablet {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      margin-bottom: 54px;
+    }
+  }
+  &__button {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 15px 35px 15px 34px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: $black;
+    background-color: $yellow;
+    border: transparent;
+    border-radius: 10px;
+    display: block;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 86px;
+    }
+  }
+  &__icon--open {
+    width: 12px;
+    height: 12px;
+  }
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 80px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 32px;
+    }
+  }
+  &__item {
+    max-width: 230px;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      max-width: 152px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 368px;
+    }
+  }
 }
 
-.tradition__text {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 176%;
-  letter-spacing: 4%;
-  text-align: center;
-  color: $white;
-  margin-top: 40px;
-  margin-bottom: 24px;
-  max-width: 320px;
-  @media screen and (min-width: 768px) {
-    text-align: left;
-    margin-top: 8px;
-    margin-bottom: 0;
-    max-width: 334px;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 194%;
-  }
-}
-.tradition__text--tablet {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 32px;
-  }
-}
-.tradition__button {
-  font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0%;
-  text-align: center;
-  padding: 15px 35px 15px 34px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  color: $black;
-  background-color: $yellow;
-  border: transparent;
-  border-radius: 10px;
-  display: block;
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
-}
-.tradition__icon--open {
-  width: 12px;
-  height: 12px;
-}
-.tradition__list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    gap: 80px;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 320px;
-  }
-}
 .tradition__icon--fon {
   width: 50px;
   height: 50px;
