@@ -1,0 +1,2 @@
+!function(){var o={openModalTraditionBtn:document.querySelector("[data-modalTradition-open]"),closeModalTraditionBtn:document.querySelector("[data-Modaltradition-close]"),modalTradition:document.querySelector("[data-modalTradition]")};function t(){o.modalTradition.classList.toggle("is-hidden"),document.body.classList.toggle("no-scroll")}o.openModalTraditionBtn.addEventListener("click",t),o.closeModalTraditionBtn.addEventListener("click",t)}();
+//# sourceMappingURL=index.aeeb091f.js.map

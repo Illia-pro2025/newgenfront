@@ -1,2 +1,2 @@
 !function(){var o={openMobBtn:document.querySelector("[data-mob-open]"),closeMobBtn:document.querySelector("[data-mob-close]"),mob:document.querySelector("[data-mob]")};function e(){o.mob.classList.toggle("is-hidden"),document.body.classList.toggle("no-scroll")}o.openMobBtn.addEventListener("click",e),o.closeMobBtn.addEventListener("click",e)}();
-//# sourceMappingURL=index.1187d8b4.js.map
+//# sourceMappingURL=index.23f51379.js.map
