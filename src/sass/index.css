@@ -919,6 +919,23 @@ ul {
   }
 }
 
+.gallery {
+  background-image: url(./../images/production+gallery__fon-mobilex1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.gallery__images__item {
+  display: none;
+}
+
+.gallery__images__item.active {
+  display: block;
+  text-align: center;
+}
+
 .location {
   background-color: #84a178;
 }
@@ -927,6 +944,14 @@ ul {
   display: flex;
   align-items: center;
   gap: 32px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .list__of__lists {
+    flex-wrap: nowrap;
+  }
 }
 
 .location__wrap {
@@ -934,12 +959,27 @@ ul {
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
-  padding: 40px;
   background-color: #ffffff;
   border-radius: 24px;
-  width: 368px;
-  height: 542px;
+  width: 280px;
+  height: 500px;
+  padding: 10px 32px 24px 32px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1019607843);
+}
+@media (min-width: 768px) {
+  .location__wrap {
+    width: 224px;
+    height: 537px;
+    padding: 40px 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .location__wrap {
+    width: 368px;
+    height: 542px;
+    padding: 40px;
+    padding-bottom: 25px;
+  }
 }
 
 .location__lable {
@@ -947,21 +987,39 @@ ul {
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 4%;
-  text-align: center;
   color: #131313;
   background-color: #f8d24e;
   padding: 4px 14px;
   border-radius: 6px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .location__lable {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .location__list {
   border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .location__list {
+    padding-bottom: 32px;
+  }
 }
 
 .location__list:nth-child(4n) {
   border-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .location__list:nth-child(4n) {
+    padding-bottom: 32px;
+  }
 }
 
 .location__title {
@@ -1019,23 +1077,6 @@ ul {
   padding: 12px 40px;
   border-radius: 10px;
   border: 2px solid #f8d24e;
-}
-
-.gallery {
-  background-image: url(./../images/production+gallery__fon-mobilex1.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.gallery__images__item {
-  display: none;
-}
-
-.gallery__images__item.active {
-  display: block;
-  text-align: center;
 }
 
 .footer {
