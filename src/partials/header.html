@@ -1,47 +1,46 @@
-<header class="header">
+<header role="banner" class="header">
   <div class="container header__container">
-    <a href="#" class="logo"
+    <a href="./index.html" aria-label="logo" class="logo"
       ><svg class="logo__img">
-        <use
-          class="logo__use"
-          href="/src/images/symbol-defs.svg#icon-Logo"
-        ></use>
+        <use class="logo__use" href="./images/symbol-defs.svg#icon-Logo"></use>
       </svg>
     </a>
 
-    <nav class="nav">
+    <nav role="navigation" class="nav">
       <ul class="header__list">
-        <li class="header__item"><a href="#" class="header__link">Home</a></li>
         <li class="header__item">
-          <a href="#" class="header__link">How's It Made?</a>
+          <a href="./index.html" aria-label="nav home" class="header__link">Home</a>
         </li>
         <li class="header__item">
-          <a href="#" class="header__link">Our Products</a>
+          <a href="#tradition" aria-label="nav tradition" class="header__link">How's It Made?</a>
         </li>
         <li class="header__item">
-          <a href="#" class="header__link">Contact</a>
+          <a href="#product" aria-label="nav product" class="header__link">Our Products</a>
+        </li>
+        <li class="header__item">
+          <a href="#footer" aria-label="nav footer" class="header__link">Contact</a>
         </li>
       </ul>
     </nav>
     <div class="header__btn__wrap">
-      <button type="button" class="burger__btn" data-mob-open>
+      <button type="button" aria-label="Name" class="burger__btn" data-mob-open>
         <svg class="burger__icon">
           <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
         </svg>
       </button>
-      <button type="button" class="header__btn">Buy Now ></button>
+      <button type="button" aria-label="Name" class="header__btn">Buy Now ></button>
     </div>
     <div class="burger is-hidden" data-mob>
       <div class="container">
-        <a href="#" class="burger__logo"
+        <a href="burger-menu" aria-label="open mob menu" class="burger__logo"
           ><svg class="logo__img">
             <use
               class="logo__use"
-              href="/src/images/symbol-defs.svg#icon-Logo"
+              href="./images/symbol-defs.svg#icon-Logo"
             ></use>
           </svg>
         </a>
-        <button type="button" class="burger__close" data-mob-close>
+        <button type="button" aria-label="Name" class="burger__close" data-mob-close>
           <svg class="burger__icon__close">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
@@ -49,19 +48,19 @@
         <nav class="burger__contain">
           <ul class="burger__list">
             <li class="burger__item">
-              <a href="#" class="burger__link">Home</a>
+              <a href="./index.html" aria-label="nav home" class="burger__link">Home</a>
             </li>
             <li class="burger__item">
-              <a href="#" class="burger__link">How's It Made?</a>
+              <a href="#tradition" aria-label="nav tradition" class="burger__link">How's It Made?</a>
             </li>
             <li class="burger__item">
-              <a href="#" class="burger__link">Our Products</a>
+              <a href="#product" aria-label="nav product" class="burger__link">Our Products</a>
             </li>
             <li class="burger__item">
-              <a href="#" class="burger__link">Contact</a>
+              <a href="#footer" aria-label="nav footer" class="burger__link">Contact</a>
             </li>
             <li class="burger__item">
-              <button type="button" class="burger__buy">Buy Now ></button>
+              <button type="button" aria-label="Name" class="burger__buy">Buy Now ></button>
             </li>
           </ul>
         </nav>
