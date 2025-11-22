@@ -1,6 +1,6 @@
-const slides = document.querySelectorAll('.gallery__images__item active');
+const slides = document.querySelectorAll('.gallery__images__item');
 let slideIndex = 0;
-
+console.log(125);
 slides.forEach((slide, index) => {
   slide.addEventListener('click', () => {
     slides[slideIndex].classList.remove('active');
