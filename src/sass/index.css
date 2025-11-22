@@ -1087,6 +1087,66 @@ ul {
   border: 2px solid #f8d24e;
 }
 
+.location__modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: #84a178;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.location.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.burger__close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: transparent;
+  border: transparent;
+}
+
+.burger__icon__close {
+  width: 24px;
+  height: 24px;
+  fill: #131313;
+}
+
+.location__modal__title {
+  font-family: "Seymour One";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.location__modal__img {
+  width: 448px;
+  height: 260px;
+  border-radius: 10px;
+}
+
+.location__modal__btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #131313;
+  padding: 12px 34px;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  border: transparent;
+}
+
 .footer {
   background-color: #84a178;
   padding-top: 60px;
