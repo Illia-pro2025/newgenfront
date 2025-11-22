@@ -22,9 +22,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 280px;
- 
-  min-height: 459px;
+  width: 280px;
+  height: 459px;
   padding: 15px;
   background-color: $white;
   color: #fcfcfc;
@@ -45,16 +44,15 @@
   fill: $black;
 }
 .modal__title {
-  font-family: "Seymour One";
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-margin-top: 28px;
-margin-bottom: 20px;
-
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 28px;
+  margin-bottom: 20px;
 }
 .modal__video {
   width: 224px;
@@ -62,10 +60,10 @@ margin-bottom: 20px;
   margin-bottom: 20px;
 }
 .modal__text {
-  font-family: "Montserrat";
-font-weight: 400;
-font-size: 14px;
-line-height: 140%;
-letter-spacing: 0%;
-color: $black;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: $black;
 }
