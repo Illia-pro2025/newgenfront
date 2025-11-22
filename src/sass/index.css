@@ -933,6 +933,32 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+  position: relative;
+  padding-top: 174px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 283px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-top: 464px;
+  }
+}
+
+.gallery__images__list {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 768px) {
+  .gallery__images__list {
+    top: -145px;
+  }
 }
 
 .gallery__images__item {
