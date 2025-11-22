@@ -1,0 +1,2 @@
+(()=>{const o={openLocationBtn:document.querySelector("[data-location-open]"),closeLocationBtn:document.querySelector("[data-location-close]"),location:document.querySelector("[data-location]")};function t(){o.location.classList.toggle("is-hidden"),document.body.classList.toggle("no-scroll")}o.openLocationBtn.addEventListener("click",t),o.closeLocationBtn.addEventListener("click",t)})();
+//# sourceMappingURL=index.1787879e.js.map
