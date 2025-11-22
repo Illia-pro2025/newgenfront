@@ -54,6 +54,10 @@ ul {
   left: 50%;
   min-width: 280px;
   min-height: 459px;
+  max-width: 568px;
+  max-height: 449px;
+  opacity: 1;
+  border-width: 2px;
   padding: 15px;
   background-color: #fcfcfc;
   color: #fcfcfc;
@@ -84,14 +88,32 @@ ul {
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
-  margin-top: 28px;
+  margin-top: -4px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
 }
 
 .modal__video {
+  display: flex;
   width: 224px;
   height: 199px;
   margin-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .modal__video {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
+  }
 }
 
 .modal__text {
@@ -101,6 +123,12 @@ ul {
   line-height: 140%;
   letter-spacing: 0%;
   color: #000000;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .modal__text {
+    font-size: 16px;
+  }
 }
 
 .container {
