@@ -96,16 +96,26 @@
             <h4 class="location__title">noreply@envato.com</h4>
           </li>
         </ul>
-      </div>
-      <!-- after div -->
-      <div class="btn__wrap">
-        <button type="button" aria-label="Name" class="btn__locations">
-          Our Locations >
-        </button>
-        <button type="button" aria-label="Name" class="btn__franchise">
-          Franchise >
-        </button>
-      </div>
+      </li>
+    </ul>
+    <!-- after div -->
+    <div class="btn__wrap">
+      <button type="button" class="btn__locations" data-location-open>
+        Our Locations >
+      </button>
+      <button type="button" class="btn__franchise">Franchise ></button>
+    </div>
+  </div>
+  <div class="location__modal is-hidden" data-location>
+    <div class="container">
+      <button type="button" class="location__modal__close" data-location-close>
+        <svg class="location__modal__icon__close">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h1 class="location__modal__title">Our Locations</h1>
+      <img src="./images/favicon.png" alt="" class="location__modal__img" />
+      <button type="button" class="location__modal__btn">Open map</button>
     </div>
   </div>
 </section>
