@@ -919,6 +919,116 @@ ul {
   }
 }
 
+.gallery {
+  background-image: url(./../images/production+gallery__fon-mobilex1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  padding-top: 174px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 283px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-top: 464px;
+  }
+}
+
+.gallery__images__list {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 768px) {
+  .gallery__images__list {
+    top: -145px;
+  }
+}
+
+.gallery__images__item {
+  display: none;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.gallery__images__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .gallery__images__img {
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__images__img {
+    width: 1013px;
+  }
+}
+
+.gallery__images__item.active {
+  display: block;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.gallery__item {
+  display: none;
+}
+
+.gallery__item.active {
+  display: block;
+  text-align: center;
+}
+
+.gallery__image {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 32px;
+  border-radius: 50%;
+}
+
+.gallery__box {
+  border-radius: 24px;
+  background-color: rgb(132, 161, 120);
+  width: 100%;
+  padding: 35px 39px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1200px) {
+  .gallery__box {
+    padding: 40px 100px 47px;
+  }
+}
+
+.gallery__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  color: rgb(252, 252, 252);
+}
+
+.gallery__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-bottom: 144px;
+}
+
 .location {
   background-color: #84a178;
 }
@@ -1019,23 +1129,6 @@ ul {
   padding: 12px 40px;
   border-radius: 10px;
   border: 2px solid #f8d24e;
-}
-
-.gallery {
-  background-image: url(./../images/production+gallery__fon-mobilex1.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.gallery__images__item {
-  display: none;
-}
-
-.gallery__images__item.active {
-  display: block;
-  text-align: center;
 }
 
 .footer {

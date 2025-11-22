@@ -1,4 +1,4 @@
-const slides = document.querySelectorAll('.gallery__images__item');
+const slides = document.querySelectorAll('.gallery__item');
 let slideIndex = 0;
 console.log(125);
 slides.forEach((slide, index) => {
