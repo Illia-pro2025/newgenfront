@@ -132,7 +132,7 @@
   left: 0;
   opacity: 1;
 }
-.location.is-hidden {
+.location__modal.is-hidden {
   visibility: hidden;
   opacity: 0;
 }
@@ -174,4 +174,11 @@
   background-color: #f8d24e;
   border-radius: 10px;
   border: transparent;
+}
+.btn__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
 }
